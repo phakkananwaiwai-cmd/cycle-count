@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>Cycle count วุ้นเส้น</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 200px;
+            margin-right: 5px;
+        }
+        button {
+            padding: 10px 15px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .error {
+            color: red;
+            margin-top: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box">
+    <h2>Cycle count วุ้นเส้น</h2>
+    <p>09/10/69</p>
+    <input type="password" id="pass" placeholder="password">
+    <button onclick="login()">login</button>
+    <div id="err" class="error">wrong!</div>
+</div>
+
+<script>
+function login() {
+    var p = document.getElementById("pass").value;
+    if (p === "1969") { 
+        window.location.href = "https://docs.google.com/spreadsheets/d/1qqoslowBk9nWyO6EHQReHnPpVDiI0oHSQJr_F2VJRPQ/edit?usp=sharing"; 
+    } else {
+        document.getElementById("err").style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
+
